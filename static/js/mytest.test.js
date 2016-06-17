@@ -1,0 +1,1 @@
+var THIS_IS_SPARTA = 'mytest mytest mytest';
