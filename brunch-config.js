@@ -11,6 +11,10 @@ module.exports = {
     ]
   },
 
+  modules: {
+    nameCleaner: (path) => path.replace(/^static\/js/, 'ttb')
+  },
+
   files: {
     javascripts: {
       joinTo: {

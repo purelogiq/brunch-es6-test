@@ -148,11 +148,11 @@ var __makeRelativeRequire = function(require, mappings, pref) {
     return require(name);
   }
 };
-require.register("static/js/home.template.html", function(exports, require, module) {
-"<div>\n    <%= 'hi mom' %>\n    <div class='test class'>\n        <section style='color: blue'>\n            <% _.each(all, function(it){ %>\n                <%= it %>\n            <% }); %>\n        </section>\n    </div>\n</div>"
+require.register("ttb/home.html.ejs", function(exports, require, module) {
+module.exports = "<div>\n    <%= 'hi mom' %>\n    <div class=\"test class\">\n        <section style='color: blue'>\n            <% _.each(all, function(it){ %>\n                <%= it %>\n            <% }); %>\n        </section>\n    </div>\n</div>";
 });
 
-;require.register("static/js/initialize.js", function(exports, require, module) {
+require.register("ttb/initialize.js", function(exports, require, module) {
 'use strict';
 
 document.addEventListener('DOMContentLoaded', function () {
